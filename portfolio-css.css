@@ -100,7 +100,7 @@ div.features{
 }
 
 nav.hidden-menu{
-display: none;
+display: block;
 width: 100%;
 background-image: url("images/348H.jpg");
 background-position: center center;
@@ -116,7 +116,7 @@ nav.hidden-menu ul{
 	padding-top: 12px;
 }
 
-nav.hidden{
+#wrapper nav.hidden{
 	display: none;
 }
 label.toggle,#toggler{
