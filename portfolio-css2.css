@@ -1,0 +1,67 @@
+
+.social-media{
+	position: relative;
+	top: -45px;
+	
+	height: 100px;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+}
+
+.social-media>.social{
+	display: inline-block;
+	background-color: black;
+	opacity:0.8;
+	border-radius: 50%;
+	margin-right: 35px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+.social a{
+	width: 100px;
+	height: 62px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+
+}
+.social a i{
+	margin-right: 7px;
+}
+.camp{
+	position: relative;
+	top: -11px;
+	left: 11px;
+	margin: 0 !important;
+}
+.social:hover{
+	opacity: 0.9;
+	transform: rotate(40deg);
+}
+.social a:hover{
+text-decoration: line-through;
+color: rgba(255,255,255,0.7);
+}
+@media screen and (max-width: 590px){
+	.social-media{
+		position: initial;
+		z-index: 0;
+	}
+}
+@media screen and (max-width: 330px){
+
+	.social-media>.social{
+		margin: 7px
+	}
+	.social a{
+		font-size: 17px;
+		width: 90px;
+	}
+}
