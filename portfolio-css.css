@@ -100,7 +100,7 @@ div.features{
 }
 
 nav.hidden-menu{
-display: block;
+display: none;
 width: 100%;
 background-image: url("images/348H.jpg");
 background-position: center center;
