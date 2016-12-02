@@ -116,7 +116,7 @@ nav.hidden-menu ul{
 	padding-top: 12px;
 }
 
-.hidden{
+nav.hidden{
 	display: none;
 }
 label.toggle,#toggler{
