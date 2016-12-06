@@ -1,0 +1,221 @@
+
+.social-media{
+	position: relative;
+	top: -45px;
+	
+	height: 100px;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+}
+
+.social-media>.social{
+	display: inline-block;
+	background-color: black;
+	opacity:0.8;
+	border-radius: 50%;
+	margin-right: 35px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+.social a{
+	width: 100px;
+	height: 62px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+
+}
+.social a i{
+	margin-right: 7px;
+}
+.camp{
+	position: relative;
+	top: -11px;
+	left: 11px;
+	margin: 0 !important;
+}
+.social:hover{
+	opacity: 0.9;
+	transform: rotate(40deg);
+}
+.social a:hover{
+text-decoration: line-through;
+color: rgba(255,255,255,0.7);
+}
+
+.about{
+	text-align: center;
+	margin-top: 50px;
+}
+.contain{
+	margin: 9px auto 0 auto;
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.about .picture{
+width: 240px;
+height:180px;
+background-image: url(images/picture.jpg) ;
+background-position: 390px 490px; 
+border-radius: 50%;
+
+
+}
+.about h3{
+	width: 50%;
+	text-align: right;
+	padding-right: 15px;
+	color: #e1c285;
+	 text-transform: uppercase;
+	 font-size: 20px;
+	
+}
+.about strong{
+	color: #e1c285;
+	cursor: pointer;
+
+}
+.about em{
+
+color: #666;
+opacity: 0.7;
+margin-right: 7px;
+}
+
+.about .about-me{
+	flex: 1;
+	font-size: 1.5em;
+}
+.contain::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.about .skills-wrapper{
+	max-width: 70%;
+	margin: 75px auto 10px auto;
+}
+.skills-wrapper::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.skills-wrapper .skills{
+	float: left;
+	width: 50%;
+	margin-bottom: 15px;
+
+}
+.skills .skil-title{
+	width: 100%;
+	text-align: left;
+	color:#999;
+}
+.skil-grade{
+	text-align: left;
+}
+.skills .skil-grade span{
+	display: inline-block;
+	width: 18px;
+	height: 15px;
+	border:2px solid rgba(235,241,255,1);
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: left;
+}
+.skills .skil-grade .fill{
+border-color: rgb(201,144,101);
+}
+
+@media screen and (max-width: 693px){
+
+
+
+.about .skills-wrapper{
+	max-width: 100%;
+	margin: 0;
+
+
+}
+
+.skills-wrapper .skills{
+width: 45%;
+
+}
+.skills-wrapper .skills .skil-title , .skills-wrapper .skills .skil-grade{
+	text-align: center;
+}
+.about .about-me{
+		font-size: 19px;
+	}
+}
+
+@media screen and (max-width: 590px){
+	.social-media{
+		position: initial;
+		z-index: 0;
+
+	}
+
+	.skills-wrapper .skills{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 590px){
+	.about .about-me{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 441px){
+	.about .about-me{
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 345px){
+
+	.social-media>.social{
+		margin: 2px;
+	}
+	.social a{
+		font-size: 17px;
+		width: 90px;
+	}
+	.about .about-me{
+		font-size: 17px;
+	}
+
+}
+
+@media screen and (max-width: 1210px){
+
+	.about h3{
+			width: 100%;
+			text-align: center;
+	}
+	.contain{
+		margin:25px 0 15px 0;
+		flex-direction: column;
+		width: 100%;
+
+	}
+	.about .picture{
+		order:1;
+		margin-bottom: 15px;
+		
+	}
+	.about .about-me{
+		order:2;
+
+		
+	}
+}
