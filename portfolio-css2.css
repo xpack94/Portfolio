@@ -64,7 +64,7 @@ color: rgba(255,255,255,0.7);
 .about .picture{
 width: 240px;
 height:180px;
-background-image: url(images/picture.jpg) ;
+background-image: url("Portfolio/images/picture.jpg") ;
 background-position: 390px 490px; 
 border-radius: 50%;
 
